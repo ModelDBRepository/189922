@@ -161,8 +161,11 @@ plt.text(187,-50, '-50', fontsize = 12)
 plt.text(187,0, '0 mV', fontsize = 12)
 plt.text(145,-15, '50 ms', fontsize = 12)
 
-plt.savefig('clay_mohit.jpeg',dpi=600, format='jpeg', bbox_inches='tight')
-
+try:
+  plt.savefig('clay_mohit.jpeg',dpi=600, format='jpeg', bbox_inches='tight')
+except:
+  plt.savefig('clay_mohit.jpeg',dpi=600, format='jpeg') # incase bbox_inches failes
+  
 plt.show()
 
 
