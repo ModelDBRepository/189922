@@ -4,7 +4,7 @@
 #Save the voltage nd time series csv files as v1.csv for the standard HH model (top panel of fig.6 and v2.csv for the revised model (bottom panel for of fig. 6)
 
 
-from __future__ import division
+
 from neuron import h
 import numpy as np
 import matplotlib.pyplot as plt
